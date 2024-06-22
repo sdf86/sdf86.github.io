@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: content-box radial-gradient(#547C8C, #9FB3BF);
+    font-size: larger;
+    font-weight: bold;
+}
+blockquote {
+    font-style: italic;
+}
+h1 {
+    background: content-box radial-gradient(#545928, #6B7332);
+    text-align: center;
+    border-radius: 30px;
+    font-size: 4.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    border-radius: 5px;
+    background-color: #547C8C;
+    text-align: center;
+}
+p {
+  background: #B9BDBF;
+  margin-left: 20px;
+  border: 1px solid #3B5959;
+  border-left: 5px solid #3B5959;
+
+}
+img {
+    display: block;
+    max-width: 20%;
+    border: 1px solid #888;
+    box-shadow: 0 0.5em 0.3em #888;
+    margin-bottom: 1.25em;
+  }
+  #veryimportant {
+    background-color: #545928;
+    color: #9FB3BF;
+    font-size: 2.5rem;
+  }
+  /*.borderparagraphs p {
+    border: 1rem solid;
+    border-color: #545928;
+  }*/
+  .quotes {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+  }
+  .floatright {
+    float:right;
+    margin: 0 0 0 50rem;
+  }
+  .floatleft{
+    float:left;
+    margin:0 50rem 0 0;
+  }
+  article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.floatleftpic{
+  float:left;
+  margin: 0 1rem 0 0;
+}
+.emphasis{
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  
+}
+.nodisc {
+  display:block;
+  text-align: center;
+}
+.textcenter{
+  text-align: center;
+  font-size: 1.5rem;
+  
+}
+.atfirst{
+  font-family: cursive;
+  font-size: 2rem
+}
+li {
+  width: 20rem;
+  margin: 0 auto;
+}
+.cage{
+  margin: 0 auto;
+}
+.pbj{
+  display: flex
+}
+.border{
+  border-bottom: 1px solid lightblue;
+  margin: 0 5rem 5px 5rem;
+}
+a{
+  text-decoration: none;
+}
+.hello{
+  margin: 1rem 22rem 1rem 22rem;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+}
+.flex{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+ border: 2rem dotted green;
+}
+.flexchild1{ 
+  border:1rem solid green;
+ flex-basis:33%
+}
+.flexchild2{
+  border:2rem solid yellow;
+}
+.wrappermarkup{
+  width: 90%;
+	margin: 0 auto;
+	padding: 1em;
+}
+fieldset{
+  border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 2rem; 
+}
+textarea{
+	height:10rem;
+	padding: 1rem;
+}
+label {
+	display: block;
+	padding-bottom: 0.3rem;
+}
+select {
+	font-size: 1rem;
+}
+button{
+	font-size: 1rem;
+	margin: 2rem 0;
+	background-color: #bb342f;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+	display: block;
+	margin-bottom: 2rem;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	padding: 0 1rem;
+	border-radius: 10px;
+	border: none;
+}
