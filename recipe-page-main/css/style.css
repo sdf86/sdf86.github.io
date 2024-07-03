@@ -1,0 +1,89 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color:hsl(30, 54%, 90%)
+}
+.wrapper{
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: baseline;
+    margin-top: 8rem;
+    margin-right:23%;
+    margin-left:23%;
+    border-radius: 20px;
+    padding: 40px;
+    background-color:white;
+}
+.img{
+    max-width:100%;
+    border-radius:20px;
+    
+
+}
+h1, h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 30px;
+    }
+h2{
+  color:hsl(14, 45%, 36%)
+  
+}
+
+h3{
+    padding-left:5%;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size:18px;
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+.outfit{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size:16px;
+  
+  
+}
+.outfitul{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:16px;
+  }
+.prep{
+    background-color: hsl(330, 100%, 98%);
+    min-width: 100%;
+    border-radius: 15px;
+}
+ul li{
+  line-height: 30px;
+  
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+ol li{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+.nutrition{
+  flex-flow:row nowrap;
+  border:dotted green;
+  max-width:60rem;
+  }
+.nut1{
+  border:dotted blue;
+
+}

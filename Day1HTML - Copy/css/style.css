@@ -16,7 +16,6 @@ h1 {
     font-family: "Rasa", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    position: sticky;
     top: 20px;
 }
 h2 {
@@ -26,12 +25,16 @@ h2 {
     font-family: "Rasa", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    border: dotted orange;
+    padding: 0;
+    
 }
 p {
-  background: #B9BDBF;
-  margin-left: 20px;
-  border: 1px solid #3B5959;
-  border-left: 5px solid #3B5959;
+  background: #666666;
+ 
+  border: 2px solid #453831;
+  border-left: 5px solid #453831;
+  border:dotted green;
 
 }
 img {
@@ -40,6 +43,8 @@ img {
     border: 1px solid #453831;
     box-shadow: 0 0.5em 0.3em #888;
     margin-bottom: 1.25em;
+    border: dotted blue;
+    flex-grow: 1;
   }
   #veryimportant {
     background-color: #545928;
@@ -103,14 +108,13 @@ li {
 }
 .border{
   border-bottom: 1px solid #BB0000;
-  margin: 0 5rem 5px 5rem;
+  
+  border: dotted purple;
 }
 a{
   text-decoration: none;
 }
-.hello{
-  margin: 1rem 22rem 1rem 22rem;
-}
+
 .wrapper {
 	width: 80%;
 	margin: 0 auto;
@@ -169,4 +173,38 @@ input:not([type="radio"]):not([type="checkbox"]), textarea, select {
 	padding: 0 1rem;
 	border-radius: 10px;
 	border: none;
+}
+.bulk{
+  border: dotted violet;
+  display:flex; 
+  flex-flow: row nowrap;
+  align-content:flex-end;
+  align-items: center;
+  justify-content: space-evenly;
+}
+h3{
+  border:dotted white;
+}
+nav ul{
+  padding:0;
+  margin: 0;
+}
+nav li{
+  border:solid red;
+  padding: 0;
+  margin:.2rem;
+  
+  text-align: center;
+}
+nav a{
+  text-decoration: none;
+  display: block;
+  padding: .2rem;
+}
+nav a:hover{
+  background-color: grey;
+  
+}
+.flexitem{
+  flex-basis:20%;
 }

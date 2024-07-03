@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+        <div class="wrapper">
+            <a href="index.html">Back to homepage</a>
+            <section>
+                <h1>Stay in touch</h1>
+                <p>Fill out the form below to stay in contact with me</p>
+                <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+                    <input type="hidden"  name="send_to" value="sdf4845@gmail.com">
+                <fieldset>
+                    <legend>Your contact information</legend>
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone"
+                    placeholder="Include your area code">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </fieldset>
+                <fieldset>
+                    <legend>About you</legend>
+                    <label for="date">Requested  date</label>
+                    <input type="date" id="date" name="date">
+                    <label for="qty">How many consoles do you own?</label>
+                    <input type="number" id="qty" name="qty" min="1" max="10">
+                    
+        
+                    What platform do you prefer?
+                    <label>
+                        <input type="radio" 
+                            name="platform"
+                            value="pc" 
+                            checked>
+                            PC
+                    </label>
+                    <label>
+                            <input type="radio"
+                            name="platform"
+                            value="xbox">Xbox
+                    </label>
+                    <label>	
+                            <input type="radio"
+                            name="platform"
+                            value="psx">Playsation
+                    </label>
+                    <label>			
+                            <input type="radio"
+                            name="platform"
+                            value="switch">Switch
+                    </label>
+                    <br>	
+                    <label for="genre">What type of gaming experience do you want?</label id="abtype">
+                        <select id="genre"
+                                name="genre">
+                            <option selected>Select one...</option>
+                            <option value="RPG">RPG</option>
+                            <option value="FPS">FPS</option>
+                            <option value="Action">Action</option>
+                            <option value="Puzzle">Puzzle</option>
+                        </select>
+                    <label for="comments">Additional comments:</label>
+                    <textarea id="comments"
+                    name="comments" placeholder="Tell us more"></textarea>
+                
+                <label>
+                <input type="checkbox"
+                value="subscribe" name="subscribe"
+                checked>Add me to your email list!
+                </label>
+                </fieldset>
+                <button type="submit">Submit</button>
+                    </form>	
+            </section>
+            <aside>
+                <h3>Our Location</h3>
+                <address>
+                    Fox Music &middot;
+                    5030 Pineview Dr &middot;
+                    Morgantown, PA 19540
+                </address>
+            </aside>
+        </div>
+        <script src="js/forms.js"></script>
+
+    
+</body>
+</html>
