@@ -12,3 +12,16 @@ function randomColor() {
 
     document.body.style.background = randomColor;
 }
+
+function yellowButton() {
+    let body = document.querySelector("body");
+    body.className = "yellowBackground";
+    let tempYellow = document.querySelectorAll(".body");
+
+    for (let i = 0; i< body.clientHeight; i++) {
+        body.style.background = "yellow";
+    };
+}
+
+
+
