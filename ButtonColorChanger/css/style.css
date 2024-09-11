@@ -12,3 +12,15 @@ button {
 .yellowBackground {
     background: yellow;
 }
+
+.redBackground {
+    background: red;
+}
+
+.blueBackground {
+    background: blue;
+}
+
+.noColor {
+    background: none;
+}

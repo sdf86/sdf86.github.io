@@ -2,7 +2,8 @@ function testFunc(){
     console.log("Stuff happened");
 }
 
-//const button = document.getElementById("myButton");
+
+const body = document.querySelector("body");
 
 function randomColor() {
     let x = Math.floor(Math.random() * 256);
@@ -14,17 +15,33 @@ function randomColor() {
 }
 
 function yellowButton() {
-    let body = document.querySelector("body");
+    body.style.removeProperty('background');
+    body.classList.remove("redBackground")
+    body.classList.remove("blueBackground")
     body.classList.add("yellowBackground");
-    //for (let i = 0; i< body.clientHeight; i++) {
-       // body.classList.add("yellowBackground")
-        //body.style.background = "yellow";
-    //};
+    
 }
 
+function redButton() {
+    body.style.removeProperty('background');
+    body.classList.remove("yellowBackground")
+    body.classList.remove("blueBackground")
+    body.classList.remove("noColor")
+    body.classList.add("redBackground");
+}
 
-// function yellowButton() {
-//     body.classList.add("yellowBackground");
-// }
+function blueButton() {
+    body.style.removeProperty('background');
+    body.classList.remove("yellowBackground")
+    body.classList.remove("redBackground")
+    body.classList.remove("noColor")
+    body.classList.add("blueBackground");
+}
 
-
+function resetButton() {
+    body.style.removeProperty('background');
+    body.classList.remove("yellowBackground")
+    body.classList.remove("redBackground")
+    body.classList.remove("blueBackground")
+    body.classList.add('noColor');
+}
