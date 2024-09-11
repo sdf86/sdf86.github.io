@@ -15,9 +15,9 @@ function randomColor() {
 
 function yellowButton() {
     body.style.removeProperty('background');
-    body.classList.remove("redBackground")
-    body.classList.remove("blueBackground")
-    body.classList.remove("noColor")
+    body.classList.remove("redBackground");
+    body.classList.remove("blueBackground");
+    body.classList.remove("noColor");
     body.classList.add("yellowBackground");
     
 }
@@ -25,8 +25,8 @@ function yellowButton() {
 function redButton() {
     body.style.removeProperty('background');
     body.classList.remove("yellowBackground")
-    body.classList.remove("blueBackground")
-    body.classList.remove("noColor")
+    body.classList.remove("blueBackground");
+    body.classList.remove("noColor");
     body.classList.add("redBackground");
 }
 
@@ -34,14 +34,14 @@ function blueButton() {
     body.style.removeProperty('background');
     body.classList.remove("yellowBackground")
     body.classList.remove("redBackground")
-    body.classList.remove("noColor")
+    body.classList.remove("noColor");
     body.classList.add("blueBackground");
 }
 
 function resetButton() {
     body.style.removeProperty('background');
-    body.classList.remove("yellowBackground")
-    body.classList.remove("redBackground")
-    body.classList.remove("blueBackground")
+    body.classList.remove("yellowBackground");
+    body.classList.remove("redBackground");
+    body.classList.remove("blueBackground");
     body.classList.add('noColor');
 }
