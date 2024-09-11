@@ -17,6 +17,7 @@ function yellowButton() {
     body.style.removeProperty('background');
     body.classList.remove("redBackground")
     body.classList.remove("blueBackground")
+    body.classList.remove("noColor")
     body.classList.add("yellowBackground");
     
 }
