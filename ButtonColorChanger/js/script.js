@@ -2,7 +2,7 @@ function testFunc(){
     console.log("Stuff happened");
 }
 
-const button = document.getElementById("myButton");
+//const button = document.getElementById("myButton");
 
 function randomColor() {
     let x = Math.floor(Math.random() * 256);
@@ -15,13 +15,16 @@ function randomColor() {
 
 function yellowButton() {
     let body = document.querySelector("body");
-    body.className = "yellowBackground";
-    let tempYellow = document.querySelectorAll(".body");
-
-    for (let i = 0; i< body.clientHeight; i++) {
-        body.style.background = "yellow";
-    };
+    body.classList.add("yellowBackground");
+    //for (let i = 0; i< body.clientHeight; i++) {
+       // body.classList.add("yellowBackground")
+        //body.style.background = "yellow";
+    //};
 }
 
+
+// function yellowButton() {
+//     body.classList.add("yellowBackground");
+// }
 
 
