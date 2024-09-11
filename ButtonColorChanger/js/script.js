@@ -2,7 +2,6 @@ function testFunc(){
     console.log("Stuff happened");
 }
 
-
 const body = document.querySelector("body");
 
 function randomColor() {
