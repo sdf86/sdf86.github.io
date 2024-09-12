@@ -14,34 +14,24 @@ function randomColor() {
 }
 
 function yellowButton() {
-    body.style.removeProperty('background');
-    body.classList.remove("redBackground");
-    body.classList.remove("blueBackground");
-    body.classList.remove("noColor");
+    removeColors();
     body.classList.add("yellowBackground");
     
 }
 
 function redButton() {
-    body.style.removeProperty('background');
-    body.classList.remove("yellowBackground")
-    body.classList.remove("blueBackground");
-    body.classList.remove("noColor");
+    removeColors();
     body.classList.add("redBackground");
 }
 
 function blueButton() {
-    body.style.removeProperty('background');
-    body.classList.remove("yellowBackground")
-    body.classList.remove("redBackground")
-    body.classList.remove("noColor");
+    removeColors();
     body.classList.add("blueBackground");
 }
 
-function resetButton() {
+function removeColors() {
     body.style.removeProperty('background');
-    body.classList.remove("yellowBackground");
+    body.classList.remove('yellowBackground');
     body.classList.remove("redBackground");
-    body.classList.remove("blueBackground");
-    body.classList.add('noColor');
+    body.classList.remove("blueBackground"); 
 }
