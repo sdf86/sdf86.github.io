@@ -6,8 +6,14 @@ for (let i = 0; i < tasks.length; i++) {
         let li = document.createElement('li');
         li.appendChild(document.createTextNode(task));
         ul.appendChild(li);
+
+        console.log(i)
+        return 'Big things'
+
+       
     }
-
-
-
     
+
+
+
+  
