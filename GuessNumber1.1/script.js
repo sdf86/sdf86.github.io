@@ -20,7 +20,7 @@ const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
 
-document.querySelector('.check').addEventListener('click', function () {
+function runGame() {
   const guess = Number(document.querySelector('.guess').value);
 
   attempt++;
@@ -64,6 +64,16 @@ document.querySelector('.check').addEventListener('click', function () {
       score--;
       document.querySelector('.score').textContent = score;
     }
+  }
+}
+
+document.querySelector('.check').addEventListener('click', function () {
+  runGame();
+});
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    runGame();
   }
 });
 
