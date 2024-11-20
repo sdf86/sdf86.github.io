@@ -23,6 +23,7 @@ const displayMessage = function (message) {
 function runGame() {
   const guess = Number(document.querySelector('.guess').value);
 
+  // do not run attempt++ if enter key is pressed after correct number is guessed
   attempt++;
 
   if ((guess !== secretNumber) | (guess === secretNumber)) {
