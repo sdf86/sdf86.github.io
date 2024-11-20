@@ -26,7 +26,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
   attempt++;
 
-  if (guess !== secretNumber) {
+  if ((guess !== secretNumber) | (guess === secretNumber)) {
     document.querySelector('.attemptNumber').textContent = attempt;
   }
 
