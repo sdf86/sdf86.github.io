@@ -15,14 +15,14 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
 let attempt = 0;
-let gameOn = true;
+let isGameOn = true;
 
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
 
 function runGame() {
-  if ((gameOn = true)) {
+  if (isGameOn) {
     const guess = Number(document.querySelector('.guess').value);
 
     // do not run attempt++ if enter key is pressed after correct number is guessed
@@ -51,7 +51,7 @@ function runGame() {
       }
 
       document.querySelector('.check').style.display = 'none';
-      gameOn = false;
+      isGameOn = false;
     }
 
     //When guess is wrong
@@ -95,5 +95,5 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.guess').value = '';
   document.querySelector('.attemptNumber').textContent = 0;
   document.querySelector('.check').style.display = '';
-  gameOn = true;
+  isGameOn = true;
 });
